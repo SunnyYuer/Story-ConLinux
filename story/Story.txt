@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Story
+GenericName=A Game
+Comment=Game
+Exec=story
+Icon=story
+Terminal=true
+Type=Application
+StartupNotify=true
+Categories=ConsoleOnly;Game;
+Keywords=game;
+
