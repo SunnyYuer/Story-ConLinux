@@ -1,5 +1,5 @@
 Name:		story
-Version:	0.3.3
+Version:	0.3.4
 Release:	1%{?dist}
 Summary:	A game
 Group:		Amusements/Games
@@ -46,6 +46,9 @@ rm -rf %{_builddir}/%{name}-%{version}
 %{_datadir}/icons/hicolor/256x256/apps/story.png
 
 %changelog
+* Thu Sep 16 2016 Yuer <956768385@qq.com> - 0.3.4-1
+- bugfix
+
 * Thu Jun 16 2016 Yuer <956768385@qq.com> - 0.3.3-1
 - bugfix
 

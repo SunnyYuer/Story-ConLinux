@@ -7612,7 +7612,7 @@ struct CHARACTER Player(struct CHARACTER cha)
 			printf("请等待...10");
 			t2 = clock();
 			ti = 0;
-			while((t2-t1)/1000<=10)
+			while((t2-t1)/CLOCKS_PER_SEC<=10)
 			{
 				fx = fopen(filename,"rb");
 				if(fx!=NULL)
@@ -7620,7 +7620,7 @@ struct CHARACTER Player(struct CHARACTER cha)
 					fclose(fx);
 					break;
 				}
-				if((t2-t1)/1000==ti)
+				if((t2-t1)/CLOCKS_PER_SEC==ti)
 				{
 				 printf("\b \b\b \b%2d",10-ti);
 				 ti++;
@@ -7628,7 +7628,7 @@ struct CHARACTER Player(struct CHARACTER cha)
 				t2 = clock();
 			}
 			printf("\n");
-			if((t2-t1)/1000<=10)
+			if((t2-t1)/CLOCKS_PER_SEC<=10)
 			{
               loop1:i = 0;
 	          printf("背包\n");
@@ -7687,7 +7687,7 @@ struct CHARACTER Player(struct CHARACTER cha)
 					  printf("请等待对方答复10");
 					  t2 = clock();
 					  ti = 0;
-					  while((t2-t1)/1000<=10)
+					  while((t2-t1)/CLOCKS_PER_SEC<=10)
 					  {
 						  fx = fopen(filename,"rb");
 						  if(fx==NULL)
@@ -7707,7 +7707,7 @@ struct CHARACTER Player(struct CHARACTER cha)
 							  cha.mny -= give.mny;
 							  goto loop2;
 						  }
-						  if((t2-t1)/1000==ti)
+						  if((t2-t1)/CLOCKS_PER_SEC==ti)
 						  {
 							  printf("\b \b\b \b%2d",10-ti);
 							  ti++;
@@ -7764,7 +7764,7 @@ struct CHARACTER Player(struct CHARACTER cha)
 					  printf("请等待对方答复10");
 					  t2 = clock();
 					  ti = 0;
-					  while((t2-t1)/1000<=10)
+					  while((t2-t1)/CLOCKS_PER_SEC<=10)
 					  {
 						  fx = fopen(filename,"rb");
 						  if(fx==NULL)
@@ -7797,7 +7797,7 @@ struct CHARACTER Player(struct CHARACTER cha)
 							  }
 							  goto loop2;
 						  }
-						  if((t2-t1)/1000==ti)
+						  if((t2-t1)/CLOCKS_PER_SEC==ti)
 						  {
 							  printf("\b \b\b \b%2d",10-ti);
 							  ti++;
@@ -7823,7 +7823,7 @@ struct CHARACTER Player(struct CHARACTER cha)
 				  printf("请等待对方答复10");
 				  t2 = clock();
 				  ti = 0;
-				  while((t2-t1)/1000<=10)
+				  while((t2-t1)/CLOCKS_PER_SEC<=10)
 				  {
 					  fx = fopen(filename,"rb");
 					  if(fx==NULL)
@@ -7841,7 +7841,7 @@ struct CHARACTER Player(struct CHARACTER cha)
 						  }
 						  goto loop2;
 					  }
-					  if((t2-t1)/1000==ti)
+					  if((t2-t1)/CLOCKS_PER_SEC==ti)
 					  {
 						  printf("\b \b\b \b%2d",10-ti);
 						  ti++;
@@ -7900,7 +7900,7 @@ struct CHARACTER Player(struct CHARACTER cha)
 					  printf("请等待对方答复10");
 					  t2 = clock();
 					  ti = 0;
-					  while((t2-t1)/1000<=10)
+					  while((t2-t1)/CLOCKS_PER_SEC<=10)
 					  {
 						  fx = fopen(filename,"rb");
 						  if(fx==NULL)
@@ -7920,7 +7920,7 @@ struct CHARACTER Player(struct CHARACTER cha)
 						  {
 							  break;
 						  }
-						  if((t2-t1)/1000==ti)
+						  if((t2-t1)/CLOCKS_PER_SEC==ti)
 						  {
 							  printf("\b \b\b \b%2d",10-ti);
 							  ti++;
@@ -7928,7 +7928,7 @@ struct CHARACTER Player(struct CHARACTER cha)
 						  t2 = clock();
 					  }
 					  printf("\n");
-					  if((t2-t1)/1000>10)
+					  if((t2-t1)/CLOCKS_PER_SEC>10)
 					  {
 					   goto loop4;
 					  }
@@ -7969,7 +7969,7 @@ struct CHARACTER Player(struct CHARACTER cha)
 						  }
 						  t1 = clock();
 						  t2 = clock();
-						  while((t2-t1)/1000<1)
+						  while((t2-t1)/CLOCKS_PER_SEC<1)
 						  {
 							  t2 = clock();
 						  }
@@ -8002,7 +8002,7 @@ struct CHARACTER Player(struct CHARACTER cha)
 				fclose(fx);
 				t1 = clock();
 				t2 = clock();
-				while((t2-t1)/1000<1)
+				while((t2-t1)/CLOCKS_PER_SEC<1)
 				{
 					t2 = clock();
 				}

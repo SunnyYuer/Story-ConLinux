@@ -30,7 +30,7 @@ This file is part of Story.
 
 #define size 2552                // 20+20+20+8*12+28*17+80*24
 #define grade 40
-#define ver "0.3.3"
+#define ver "0.3.4"
 
 struct USERINFO
 {
